@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GETXH - New Order</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#3856ff",
+            "background-light": "#f5f6f8",
+            "background-dark": "#0f1223",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuC1KsUXSF7fcfzRQMtVL1MkU4lTLT5igzKZi3NueGc5_QmeuN9uwygisup-_F5NMQpdccCPoDz4YzANugZWBCDMsp4vk9KJxopj9my8qyuOzs2hoELecsB6ZkcLQQZjHQFLlSxVqAgGhyZlX1Dmx8L_VX0r27k5N6W5UAUuxz53GExQPtOl_vfDBWULrBLGk1PMiWOMNZ2Ut4dTOAuhWP5zxyZMjtmGhT3gQIHsuENhpmzjVqrm6OGmm2fFZhCNlGhEB8_TTD0MiVs);
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem
+    }</style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-[#1A1A1A] dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<header class="w-full flex justify-center bg-background-light dark:bg-background-dark border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50">
+<div class="flex items-center justify-between whitespace-nowrap px-4 sm:px-6 lg:px-8 py-4 w-full max-w-7xl">
+<div class="flex items-center gap-4 text-[#0c0f1d] dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold tracking-[-0.015em] dark:text-white">GETXH</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-center gap-8">
+<a class="text-sm font-semibold leading-normal text-primary" href="#">New Order</a>
+<a class="text-sm font-medium leading-normal text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary" href="#">Orders</a>
+<a class="text-sm font-medium leading-normal text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary" href="#">Services</a>
+<a class="text-sm font-medium leading-normal text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary" href="#">API</a>
+<a class="text-sm font-medium leading-normal text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary" href="#">Support</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDXl3LRo0T4ab8H-80YEDxpJs7DK_7kokSsQMWlTFi9IG8hfDXGKLNc9ZHjJ6RfeO6_NMbbUWDOI9VZ2s4-n3wl5OgZl9TowlyttmWYiZMdxGPrQGifSP-hlKJASMtCBFmrnrp09TEVYZkyLi_iYAWgYLC3HHledG2OFGZHud6Ft1FI0UVbqGQ-zPhwvdVM7TfQ3rwpQRmMKOm9Um1c6Mh1Tz9F9homd7lAExcIcO7Ubm_82my3q16EQpcUqvKC9NtermTcWtTijsM");'></div>
+</div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-8 lg:py-12">
+<div class="layout-content-container flex flex-col w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<h1 class="text-[#0c0f1d] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Create a New Order</h1>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-6">
+<!-- Left Column: Order Form -->
+<div class="lg:col-span-2 flex flex-col gap-6">
+<div class="bg-white dark:bg-background-dark p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-800">
+<!-- SearchBar -->
+<div class="mb-6">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-gray-500 dark:text-gray-400 flex bg-[#f5f6f8] dark:bg-gray-800 items-center justify-center pl-4 rounded-l-lg border-y border-l border-gray-200 dark:border-gray-700">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-[#0c0f1d] dark:text-gray-200 focus:outline-0 focus:ring-2 focus:ring-primary/50 border-y border-r border-gray-200 dark:border-gray-700 bg-[#f5f6f8] dark:bg-gray-800 h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-4 text-base font-normal leading-normal" placeholder="Search for a service..." value=""/>
+</div>
+</label>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Category TextField -->
+<label class="flex flex-col">
+<p class="text-sm font-medium leading-normal pb-2 text-[#1A1A1A] dark:text-gray-200">Category</p>
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#1A1A1A] dark:text-gray-200 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-gray-800 h-12 placeholder:text-gray-500 px-3 text-base font-normal leading-normal">
+<option value="one">Instagram Followers</option>
+<option value="two">YouTube Views</option>
+<option value="three">TikTok Likes</option>
+</select>
+</label>
+<!-- Service TextField -->
+<label class="flex flex-col">
+<p class="text-sm font-medium leading-normal pb-2 text-[#1A1A1A] dark:text-gray-200">Service</p>
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#1A1A1A] dark:text-gray-200 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-gray-800 h-12 placeholder:text-gray-500 px-3 text-base font-normal leading-normal">
+<option value="one">Followers [Real AR] [R30]</option>
+<option value="two">Followers [HQ] [No-Refill]</option>
+<option value="three">Followers [Premium] [Lifetime]</option>
+</select>
+</label>
+</div>
+</div>
+<!-- Service Details Grid -->
+<div class="bg-white dark:bg-background-dark p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-800">
+<h3 class="text-lg font-bold text-[#1A1A1A] dark:text-white mb-4">Service Details</h3>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">timer</span>
+<div>
+<p class="text-sm text-gray-500 dark:text-gray-400">Start time</p>
+<p class="font-semibold text-[#1A1A1A] dark:text-white">Instant</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">speed</span>
+<div>
+<p class="text-sm text-gray-500 dark:text-gray-400">Speed</p>
+<p class="font-semibold text-[#1A1A1A] dark:text-white">10K/Day</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">autorenew</span>
+<div>
+<p class="text-sm text-gray-500 dark:text-gray-400">Refill</p>
+<p class="font-semibold text-[#1A1A1A] dark:text-white">30 Days</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">cancel</span>
+<div>
+<p class="text-sm text-gray-500 dark:text-gray-400">Cancel</p>
+<p class="font-semibold text-[#1A1A1A] dark:text-white">Allowed</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">trending_down</span>
+<div>
+<p class="text-sm text-gray-500 dark:text-gray-400">Drop %</p>
+<p class="font-semibold text-[#1A1A1A] dark:text-white">0-5%</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">verified</span>
+<div>
+<p class="text-sm text-gray-500 dark:text-gray-400">Quality</p>
+<p class="font-semibold text-[#1A1A1A] dark:text-white">High Quality</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Read Before You Order Box -->
+<div class="bg-primary/5 dark:bg-primary/10 p-6 rounded-lg border border-primary/20">
+<h3 class="text-lg font-bold text-primary mb-2">Read before you order</h3>
+<ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1 text-sm">
+<li>Make sure your account is public before placing an order.</li>
+<li>Do not change your username while the order is in progress.</li>
+<li>Allow up to 24 hours for the order to be fully delivered.</li>
+</ul>
+</div>
+<!-- Link and Quantity Inputs -->
+<div class="bg-white dark:bg-background-dark p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-800 flex flex-col gap-6">
+<label class="flex flex-col w-full">
+<p class="text-sm font-medium leading-normal pb-2 text-[#1A1A1A] dark:text-gray-200">Link</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#1A1A1A] dark:text-gray-200 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-gray-800 h-12 placeholder:text-gray-500 dark:placeholder:text-gray-400 px-4 text-base font-normal leading-normal" placeholder="e.g., https://instagram.com/p/..." value=""/>
+</label>
+<label class="flex flex-col w-full">
+<div class="flex justify-between items-baseline pb-2">
+<p class="text-sm font-medium leading-normal text-[#1A1A1A] dark:text-gray-200">Quantity</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">Min: 100 / Max: 5000</p>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#1A1A1A] dark:text-gray-200 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-gray-800 h-12 placeholder:text-gray-500 dark:placeholder:text-gray-400 px-4 text-base font-normal leading-normal" placeholder="Enter quantity" value="1000"/>
+</label>
+</div>
+</div>
+<!-- Right Column: Summary and CTA -->
+<div class="lg:col-span-1">
+<div class="sticky top-28 flex flex-col gap-6">
+<!-- Total Cost Card -->
+<div class="bg-white dark:bg-background-dark p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-800">
+<h3 class="text-lg font-bold text-[#1A1A1A] dark:text-white mb-4">Order Summary</h3>
+<div class="flex justify-between items-center">
+<p class="text-base text-gray-600 dark:text-gray-300">Total Cost</p>
+<p class="text-3xl font-bold text-primary">$12.50</p>
+</div>
+</div>
+<!-- Place Order Button -->
+<button class="flex items-center justify-center whitespace-nowrap h-14 w-full rounded-lg bg-primary px-6 text-base font-semibold text-white shadow-md hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 dark:focus:ring-offset-background-dark transition-colors">Place Order</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GETXH - Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#007BFF",
+              "background-light": "#FFFFFF",
+              "background-dark": "#0f1223",
+              "text-primary-light": "#1D1D1F",
+              "text-secondary-light": "#888888",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.75rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+            boxShadow: {
+              'light': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05)',
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-primary-light dark:text-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-8 lg:px-20 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-[1200px] flex-1">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-800 px-6 py-4">
+<div class="flex items-center gap-4 text-text-primary-light dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-text-primary-light dark:text-white text-xl font-bold tracking-tight">GETXH</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-center gap-8">
+<div class="flex items-center gap-9">
+<a class="text-text-primary-light dark:text-white/80 text-sm font-medium hover:text-primary dark:hover:text-white" href="#">Dashboard</a>
+<a class="text-primary dark:text-white text-sm font-semibold" href="#">Services</a>
+<a class="text-text-primary-light dark:text-white/80 text-sm font-medium hover:text-primary dark:hover:text-white" href="#">Orders</a>
+<a class="text-text-primary-light dark:text-white/80 text-sm font-medium hover:text-primary dark:hover:text-white" href="#">Support</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-gray-100 dark:bg-background-dark dark:border dark:border-gray-700 text-text-primary-light dark:text-white/80 hover:bg-gray-200 dark:hover:bg-gray-800">
+<span class="material-symbols-outlined text-xl">notifications</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDdvA_OebE-0dMbKhyYQpSjhC7fyJ--Y3K4lVYWB1rTgssvX_ILPpAgqVjyQS6eqbv1Sv244C-M3bihjwUB9ZX5HiLFPfggRWME6LgWgpgp-MAilUrchQN673ceYHUbStLXFqWhd2fhTrjS5Njb1FR-7FvlDCjR_nhtin9lkxdbACkHUiiddIafZgoUGkc1L_LQRGxSDuZYdChfu56Nh9Ymd56vPXpvJ0PKM4p_UEkaE4LAI9IIeMCbq9BpF9OvPnPlJPA8aNY55mA");'></div>
+</div>
+</header>
+<main class="flex-1 mt-8 px-6">
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-4 py-8">
+<div class="flex min-w-72 flex-col gap-2">
+<p class="text-text-primary-light dark:text-white text-4xl font-black tracking-tighter">Explore Our Services</p>
+<p class="text-text-secondary-light dark:text-white/70 text-base font-normal">Find the best solutions to grow your social media presence.</p>
+</div>
+</div>
+<!-- Tabs -->
+<div class="pb-3">
+<div class="flex border-b border-gray-200 dark:border-gray-800 gap-8">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-primary text-text-primary-light dark:text-white pb-3 pt-2" href="#">
+<p class="text-sm font-semibold">Instagram</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-secondary-light dark:text-white/70 hover:text-text-primary-light dark:hover:text-white pb-3 pt-2" href="#">
+<p class="text-sm font-medium">YouTube</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-secondary-light dark:text-white/70 hover:text-text-primary-light dark:hover:text-white pb-3 pt-2" href="#">
+<p class="text-sm font-medium">Facebook</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-secondary-light dark:text-white/70 hover:text-text-primary-light dark:hover:text-white pb-3 pt-2" href="#">
+<p class="text-sm font-medium">TikTok</p>
+</a>
+</div>
+</div>
+<!-- ImageGrid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 py-8">
+<!-- Card 1 -->
+<div class="flex flex-col gap-4 p-5 bg-background-light dark:bg-gray-900/50 border border-gray-100 dark:border-gray-800 rounded shadow-light transition-all hover:shadow-lg hover:-translate-y-1">
+<div class="flex-grow space-y-4">
+<h3 class="text-text-primary-light dark:text-white text-base font-bold">Instagram Followers - HQ</h3>
+<div class="space-y-2 text-sm">
+<div class="flex justify-between items-center">
+<span class="text-text-secondary-light dark:text-white/60">Price / 1000</span>
+<span class="text-text-primary-light dark:text-white font-medium">$5.00</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-text-secondary-light dark:text-white/60">Min Order</span>
+<span class="text-text-primary-light dark:text-white font-medium">100</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-text-secondary-light dark:text-white/60">Max Order</span>
+<span class="text-text-primary-light dark:text-white font-medium">10,000</span>
+</div>
+</div>
+</div>
+<button class="w-full flex items-center justify-center rounded bg-primary text-white text-sm font-semibold h-10 mt-2 hover:bg-primary/90 transition-colors">View Details</button>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col gap-4 p-5 bg-background-light dark:bg-gray-900/50 border border-gray-100 dark:border-gray-800 rounded shadow-light transition-all hover:shadow-lg hover:-translate-y-1">
+<div class="flex-grow space-y-4">
+<h3 class="text-text-primary-light dark:text-white text-base font-bold">Instagram Likes - Real</h3>
+<div class="space-y-2 text-sm">
+<div class="flex justify-between items-center">
+<span class="text-text-secondary-light dark:text-white/60">Price / 1000</span>
+<span class="text-text-primary-light dark:text-white font-medium">$1.20</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-text-secondary-light dark:text-white/60">Min Order</span>
+<span class="text-text-primary-light dark:text-white font-medium">50</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-text-secondary-light dark:text-white/60">Max Order</span>
+<span class="text-text-primary-light dark:text-white font-medium">50,000</span>
+</div>
+</div>
+</div>
+<button class="w-full flex items-center justify-center rounded bg-primary text-white text-sm font-semibold h-10 mt-2 hover:bg-primary/90 transition-colors">View Details</button>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col gap-4 p-5 bg-background-light dark:bg-gray-900/50 border border-gray-100 dark:border-gray-800 rounded shadow-light transition-all hover:shadow-lg hover:-translate-y-1">
+<div class="flex-grow space-y-4">
+<h3 class="text-text-primary-light dark:text-white text-base font-bold">Instagram Views - High Retention</h3>
+<div class="space-y-2 text-sm">
+<div class="flex justify-between items-center">
+<span class="text-text-secondary-light dark:text-white/60">Price / 1000</span>
+<span class="text-text-primary-light dark:text-white font-medium">$0.80</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-text-secondary-light dark:text-white/60">Min Order</span>
+<span class="text-text-primary-light dark:text-white font-medium">1,000</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-text-secondary-light dark:text-white/60">Max Order</span>
+<span class="text-text-primary-light dark:text-white font-medium">1,000,000</span>
+</div>
+</div>
+</div>
+<button class="w-full flex items-center justify-center rounded bg-primary text-white text-sm font-semibold h-10 mt-2 hover:bg-primary/90 transition-colors">View Details</button>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col gap-4 p-5 bg-background-light dark:bg-gray-900/50 border border-gray-100 dark:border-gray-800 rounded shadow-light transition-all hover:shadow-lg hover:-translate-y-1">
+<div class="flex-grow space-y-4">
+<h3 class="text-text-primary-light dark:text-white text-base font-bold">Instagram Story Views</h3>
+<div class="space-y-2 text-sm">
+<div class="flex justify-between items-center">
+<span class="text-text-secondary-light dark:text-white/60">Price / 1000</span>
+<span class="text-text-primary-light dark:text-white font-medium">$0.50</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-text-secondary-light dark:text-white/60">Min Order</span>
+<span class="text-text-primary-light dark:text-white font-medium">100</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-text-secondary-light dark:text-white/60">Max Order</span>
+<span class="text-text-primary-light dark:text-white font-medium">25,000</span>
+</div>
+</div>
+</div>
+<button class="w-full flex items-center justify-center rounded bg-primary text-white text-sm font-semibold h-10 mt-2 hover:bg-primary/90 transition-colors">View Details</button>
+</div>
+<!-- Card 5 -->
+<div class="flex flex-col gap-4 p-5 bg-background-light dark:bg-gray-900/50 border border-gray-100 dark:border-gray-800 rounded shadow-light transition-all hover:shadow-lg hover:-translate-y-1">
+<div class="flex-grow space-y-4">
+<h3 class="text-text-primary-light dark:text-white text-base font-bold">Instagram Comments - Custom</h3>
+<div class="space-y-2 text-sm">
+<div class="flex justify-between items-center">
+<span class="text-text-secondary-light dark:text-white/60">Price / 1000</span>
+<span class="text-text-primary-light dark:text-white font-medium">$10.00</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-text-secondary-light dark:text-white/60">Min Order</span>
+<span class="text-text-primary-light dark:text-white font-medium">10</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-text-secondary-light dark:text-white/60">Max Order</span>
+<span class="text-text-primary-light dark:text-white font-medium">1,000</span>
+</div>
+</div>
+</div>
+<button class="w-full flex items-center justify-center rounded bg-primary text-white text-sm font-semibold h-10 mt-2 hover:bg-primary/90 transition-colors">View Details</button>
+</div>
+<!-- Card 6 -->
+<div class="flex flex-col gap-4 p-5 bg-background-light dark:bg-gray-900/50 border border-gray-100 dark:border-gray-800 rounded shadow-light transition-all hover:shadow-lg hover:-translate-y-1">
+<div class="flex-grow space-y-4">
+<h3 class="text-text-primary-light dark:text-white text-base font-bold">Instagram Reels Likes</h3>
+<div class="space-y-2 text-sm">
+<div class="flex justify-between items-center">
+<span class="text-text-secondary-light dark:text-white/60">Price / 1000</span>
+<span class="text-text-primary-light dark:text-white font-medium">$1.50</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-text-secondary-light dark:text-white/60">Min Order</span>
+<span class="text-text-primary-light dark:text-white font-medium">100</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-text-secondary-light dark:text-white/60">Max Order</span>
+<span class="text-text-primary-light dark:text-white font-medium">50,000</span>
+</div>
+</div>
+</div>
+<button class="w-full flex items-center justify-center rounded bg-primary text-white text-sm font-semibold h-10 mt-2 hover:bg-primary/90 transition-colors">View Details</button>
+</div>
+</div>
+<!-- Pagination -->
+<div class="flex items-center justify-center p-4">
+<a class="flex size-10 items-center justify-center text-text-secondary-light dark:text-white/70 hover:text-text-primary-light dark:hover:text-white" href="#">
+<span class="material-symbols-outlined text-xl">chevron_left</span>
+</a>
+<a class="text-sm font-bold flex size-10 items-center justify-center text-white rounded-full bg-primary" href="#">1</a>
+<a class="text-sm font-medium flex size-10 items-center justify-center text-text-primary-light dark:text-white/90 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800" href="#">2</a>
+<a class="text-sm font-medium flex size-10 items-center justify-center text-text-primary-light dark:text-white/90 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800" href="#">3</a>
+<span class="text-sm font-medium flex size-10 items-center justify-center text-text-secondary-light dark:text-white/70">...</span>
+<a class="text-sm font-medium flex size-10 items-center justify-center text-text-primary-light dark:text-white/90 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800" href="#">8</a>
+<a class="text-sm font-medium flex size-10 items-center justify-center text-text-primary-light dark:text-white/90 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800" href="#">9</a>
+<a class="text-sm font-medium flex size-10 items-center justify-center text-text-primary-light dark:text-white/90 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800" href="#">10</a>
+<a class="flex size-10 items-center justify-center text-text-secondary-light dark:text-white/70 hover:text-text-primary-light dark:hover:text-white" href="#">
+<span class="material-symbols-outlined text-xl">chevron_right</span>
+</a>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>
