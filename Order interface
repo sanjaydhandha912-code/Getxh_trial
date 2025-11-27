@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>GETXH - Orders</title>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+</head>
+
+<body class="bg-[#f5f6f8] font-display">
+
+<div class="min-h-screen p-4 max-w-3xl mx-auto">
+
+  <!-- HEADER -->
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-2xl font-bold">Your Orders</h2>
+
+    <button onclick="location.href='Dashboard.html'"
+      class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg">
+      Back
+    </button>
+  </div>
+
+  <!-- ORDERS TABLE -->
+  <div class="bg-white p-6 rounded-xl shadow">
+
+    <h3 class="text-xl font-semibold mb-4">Order History</h3>
+
+    <div class="overflow-x-auto">
+      <table class="w-full text-left border-collapse">
+
+        <thead>
+          <tr class="border-b bg-gray-50">
+            <th class="p-3 text-sm font-semibold text-gray-600">Order ID</th>
+            <th class="p-3 text-sm font-semibold text-gray-600">Service</th>
+            <th class="p-3 text-sm font-semibold text-gray-600">Quantity</th>
+            <th class="p-3 text-sm font-semibold text-gray-600">Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr class="border-b hover:bg-gray-50">
+            <td class="p-3 text-sm">#10294</td>
+            <td class="p-3 text-sm">Instagram Likes</td>
+            <td class="p-3 text-sm">1000</td>
+            <td class="p-3 text-sm text-green-600 font-semibold">Completed</td>
+          </tr>
+
+          <tr class="border-b hover:bg-gray-50">
+            <td class="p-3 text-sm">#10278</td>
+            <td class="p-3 text-sm">Reel Views</td>
+            <td class="p-3 text-sm">5000</td>
+            <td class="p-3 text-sm text-blue-600 font-semibold">Processing</td>
+          </tr>
+
+          <tr class="border-b hover:bg-gray-50">
+            <td class="p-3 text-sm">#10211</td>
+            <td class="p-3 text-sm">Followers</td>
+            <td class="p-3 text-sm">200</td>
+            <td class="p-3 text-sm text-yellow-600 font-semibold">Pending</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
