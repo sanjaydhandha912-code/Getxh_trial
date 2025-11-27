@@ -1,153 +1,93 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en"><head>
+<html class="light" lang="en">
+<head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>GETXH Dashboard</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>GETXH - Dashboard</title>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
 <style>
-    .material-symbols-outlined {
-      font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24
-    }
-  </style>
-<script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "primary": "#3856ff",
-            "background-light": "#f5f6f8",
-            "background-dark": "#0f1223",
-          },
-          fontFamily: {
-            "display": ["Inter", "sans-serif"]
-          },
-          borderRadius: {
-            "DEFAULT": "0.5rem",
-            "lg": "0.75rem",
-            "xl": "1.5rem",
-            "full": "9999px"
-          },
-        },
-      },
-    }
-  </script>
+.sidebar-link {
+ @apply flex items-center gap-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-100 transition;
+}
+.sidebar-active {
+ @apply bg-blue-100 text-blue-700 font-semibold;
+}
+</style>
+
 </head>
-<body class="font-display bg-background-light dark:bg-background-dark text-[#111827] dark:text-white">
+
+<body class="bg-[#f5f6f8] font-display">
+
 <div class="flex min-h-screen">
-<!-- SideNavBar -->
-<aside class="fixed flex h-full w-64 flex-col border-r border-gray-200 dark:border-gray-800 bg-white dark:bg-[#111827] px-4 py-6">
-<div class="flex flex-col gap-8">
-<div class="px-2">
-<h1 class="text-xl font-bold tracking-tighter text-[#111827] dark:text-white">getxh</h1>
-<div class="h-0.5 w-8 bg-primary mt-1"></div>
+
+  <!-- SIDEBAR -->
+  <aside class="w-64 bg-white border-r hidden md:block">
+    <div class="p-6 border-b">
+      <h1 class="text-2xl font-bold text-blue-600 cursor-pointer" onclick="location.href='Dashboard.html'">
+        GETXH
+      </h1>
+    </div>
+
+    <nav class="p-4 space-y-1">
+
+      <a href="Dashboard.html" class="sidebar-link sidebar-active">Dashboard</a>
+      <a href="Orderpage.html" class="sidebar-link">New Order</a>
+      <a href="Orderspage.html" class="sidebar-link">Orders</a>
+      <a href="Servicespage.html" class="sidebar-link">Services</a>
+      <a href="#" class="sidebar-link">Add Funds</a>
+      <a href="#" class="sidebar-link">Subscriptions</a>
+      <a href="#" class="sidebar-link">Refunds</a>
+      <a href="#" class="sidebar-link">Support</a>
+
+      <hr class="my-3"/>
+
+      <a href="index.html" class="sidebar-link text-red-600 font-semibold">Logout</a>
+
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-1 p-6">
+
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-2xl font-bold">Welcome, User</h2>
+
+      <button class="px-4 py-2 bg-blue-600 text-white rounded-lg">Watch Demo</button>
+    </div>
+
+    <!-- STATS CARDS -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+      
+      <div class="bg-white p-5 rounded-xl shadow text-center">
+        <p class="text-gray-500">Balance</p>
+        <p class="text-3xl font-bold text-blue-600">₹0</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl shadow text-center">
+        <p class="text-gray-500">Your Orders</p>
+        <p class="text-3xl font-bold text-blue-600">0</p>
+      </div>
+
+    </div>
+
+    <!-- QUICK ACTION -->
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h3 class="text-xl font-semibold mb-3">Quick Actions</h3>
+
+      <button onclick="location.href='Orderpage.html'"
+        class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold">
+        Create New Order
+      </button>
+    </div>
+
+  </main>
 </div>
-<nav class="flex flex-col gap-2">
-<a class="flex items-center gap-3 rounded-lg px-3 py-2 bg-primary/10 text-primary dark:bg-primary/20" href="#">
-<span class="material-symbols-outlined text-primary">add_shopping_cart</span>
-<p class="text-sm font-medium">New Order</p>
-</a>
-<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
-<span class="material-symbols-outlined">shopping_cart</span>
-<p class="text-sm font-medium">Orders</p>
-</a>
-<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
-<span class="material-symbols-outlined">grid_view</span>
-<p class="text-sm font-medium">Services</p>
-</a>
-<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
-<span class="material-symbols-outlined">account_balance_wallet</span>
-<p class="text-sm font-medium">Add Funds</p>
-</a>
-<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
-<span class="material-symbols-outlined">sync</span>
-<p class="text-sm font-medium">Subscriptions</p>
-</a>
-<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
-<span class="material-symbols-outlined">undo</span>
-<p class="text-sm font-medium">Refunds</p>
-</a>
-<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
-<span class="material-symbols-outlined">support_agent</span>
-<p class="text-sm font-medium">Support</p>
-</a>
-<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
-<span class="material-symbols-outlined">settings</span>
-<p class="text-sm font-medium">Settings</p>
-</a>
-</nav>
-</div>
-<div class="mt-auto">
-<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
-<span class="material-symbols-outlined">logout</span>
-<p class="text-sm font-medium">Logout</p>
-</a>
-</div>
-</aside>
-<!-- Main Content -->
-<main class="ml-64 flex-1 p-8">
-<div class="mx-auto max-w-5xl">
-<!-- PageHeading -->
-<div class="mb-8">
-<h1 class="text-4xl font-black tracking-[-0.033em] text-[#111827] dark:text-white">Welcome, Alex</h1>
-</div>
-<!-- Stats & Buttons -->
-<div class="grid grid-cols-1 gap-6 md:grid-cols-3">
-<!-- Stats Cards -->
-<div class="col-span-1 flex flex-col gap-6 md:col-span-2">
-<div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-<div class="flex flex-col gap-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-[#111827] p-6 shadow-sm">
-<p class="text-base font-medium text-gray-600 dark:text-gray-300">Balance</p>
-<p class="text-3xl font-bold tracking-tight text-[#111827] dark:text-white">$1,234.56</p>
-</div>
-<div class="flex flex-col gap-2 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-[#111827] p-6 shadow-sm">
-<p class="text-base font-medium text-gray-600 dark:text-gray-300">Total orders</p>
-<p class="text-3xl font-bold tracking-tight text-[#111827] dark:text-white">789</p>
-</div>
-</div>
-</div>
-<!-- Button Group -->
-<div class="col-span-1 flex flex-col justify-center gap-3">
-<button class="flex h-12 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary text-white text-sm font-bold shadow-sm transition-opacity hover:opacity-90">
-<span class="truncate">Quick New Order</span>
-</button>
-<button class="flex h-12 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-[#111827] text-sm font-bold text-[#111827] dark:text-white shadow-sm transition-colors hover:bg-gray-50 dark:hover:bg-gray-800">
-<span class="truncate">Watch Demo</span>
-</button>
-</div>
-</div>
-<!-- Tabs -->
-<div class="mt-8">
-<div class="border-b border-gray-200 dark:border-gray-800">
-<div class="-mb-px flex gap-8 px-1">
-<a class="flex flex-col items-center justify-center border-b-2 border-primary text-primary py-3" href="#">
-<p class="text-sm font-bold tracking-wide">New Order</p>
-</a>
-<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-gray-500 dark:text-gray-400 py-3 hover:border-gray-300 dark:hover:border-gray-700 hover:text-gray-800 dark:hover:text-gray-200" href="#">
-<p class="text-sm font-bold tracking-wide">Subscriptions</p>
-</a>
-</div>
-</div>
-<!-- Tab Content Panel -->
-<div class="mt-6">
-<div class="rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-[#111827] p-8 shadow-sm">
-<div class="text-center text-gray-500 dark:text-gray-400">
-<p>Content for the "New Order" tab will be displayed here.</p>
-<p class="text-sm mt-2">This is a placeholder for the form or interface to create a new order.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</main>
-</div>
-</body></html>
+
+</body>
+</html>
