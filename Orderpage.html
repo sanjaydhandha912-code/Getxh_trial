@@ -1,61 +1,173 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
+<html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>GETXH - New Order</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GETXH - New Order</title>
 
-<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
 
-<body class="bg-[#f5f6f8] font-display">
+<body class="bg-[#f5f6f8]">
 
-<div class="min-h-screen p-4 max-w-xl mx-auto">
+    <!-- NAVBAR -->
+    <nav class="w-full bg-white shadow-sm px-6 py-4 flex items-center justify-between">
+        <div class="font-bold text-xl">GETXH</div>
 
-  <!-- HEADER -->
-  <div class="flex items-center justify-between mb-6">
-    <h2 class="text-2xl font-bold">New Order</h2>
+        <div class="hidden md:flex gap-6">
+            <a href="Orderpage.html" class="text-blue-600 font-semibold">New Order</a>
+            <a href="Orderspage.html" class="text-gray-600">Orders</a>
+            <a href="Servicespage.html" class="text-gray-600">Services</a>
+            <a href="#" class="text-gray-600">API</a>
+            <a href="#" class="text-gray-600">Support</a>
+        </div>
 
-    <button onclick="location.href='Dashboard.html'"
-      class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg">
-      Back
-    </button>
-  </div>
+        <div class="w-10 h-10 rounded-full bg-gray-300"></div>
+    </nav>
 
-  <!-- ORDER FORM -->
-  <div class="bg-white p-6 rounded-xl shadow space-y-5">
+    <!-- PAGE CONTAINER -->
+    <div class="max-w-7xl mx-auto px-4 py-10">
 
-    <div>
-      <label class="text-sm font-medium">Service</label>
-      <select class="w-full border rounded-lg h-12 px-3">
-        <option>Select a service</option>
-        <option>Instagram Likes</option>
-        <option>Instagram Followers</option>
-        <option>Reel Views</option>
-        <option>Story Views</option>
-      </select>
+        <!-- TITLE -->
+        <h1 class="text-3xl font-bold mb-8">Create a New Order</h1>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+            <!-- LEFT SIDE CONTENT -->
+            <div class="lg:col-span-2 space-y-6">
+
+                <!-- SEARCH BAR -->
+                <div class="bg-white p-5 rounded-xl shadow">
+                    <input type="text" placeholder="Search for a service..." class="w-full h-12 px-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-400" />
+                </div>
+
+                <!-- CATEGORY + SERVICE -->
+                <div class="bg-white p-5 rounded-xl shadow grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Category</label>
+                        <select class="w-full h-12 border border-gray-300 rounded-lg px-3">
+                            <option>Instagram Followers</option>
+                            <option>Instagram Likes</option>
+                            <option>YouTube Views</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Service</label>
+                        <select class="w-full h-12 border border-gray-300 rounded-lg px-3">
+                            <option>Followers [Real AR] [R30]</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- SERVICE DETAILS -->
+                <div class="bg-white p-5 rounded-xl shadow grid md:grid-cols-3 gap-5 text-sm">
+
+                    <div>
+                        <p class="font-semibold">Start time</p>
+                        <p class="text-gray-600">Instant</p>
+                    </div>
+
+                    <div>
+                        <p class="font-semibold">Speed</p>
+                        <p class="text-gray-600">10K/Day</p>
+                    </div>
+
+                    <div>
+                        <p class="font-semibold">Refill</p>
+                        <p class="text-gray-600">30 Days</p>
+                    </div>
+
+                    <div>
+                        <p class="font-semibold">Cancel</p>
+                        <p class="text-gray-600">Allowed</p>
+                    </div>
+
+                    <div>
+                        <p class="font-semibold">Drop %</p>
+                        <p class="text-gray-600">0–5%</p>
+                    </div>
+
+                    <div>
+                        <p class="font-semibold">Quality</p>
+                        <p class="text-gray-600">High Quality</p>
+                    </div>
+                </div>
+
+                <!-- READ BEFORE ORDER -->
+                <div class="bg-blue-50 p-5 rounded-xl border border-blue-200">
+                    <h2 class="font-semibold text-blue-600 mb-2">Read before you order</h2>
+                    <ul class="text-gray-700 list-disc ml-5 space-y-1">
+                        <li>Make sure your account is public.</li>
+                        <li>Do not change username while the order is in progress.</li>
+                        <li>Allow up to 24 hours for the order to be fully delivered.</li>
+                    </ul>
+                </div>
+
+                <!-- LINK + QUANTITY -->
+                <div class="bg-white p-5 rounded-xl shadow space-y-4">
+
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Link</label>
+                        <input type="text" placeholder="https://instagram.com/..." class="w-full h-12 px-4 rounded-lg border border-gray-300" />
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Quantity</label>
+                        <input type="number" value="1000" class="w-full h-12 px-4 rounded-lg border border-gray-300" />
+                        <p class="text-xs text-gray-500 mt-1">Min: 100 / Max: 5000</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE ORDER SUMMARY -->
+            <div class="space-y-6">
+
+                <!-- CURRENCY BUTTON -->
+                <button id="currencyBtn" class="w-full bg-white border border-gray-300 py-2 rounded-lg text-sm font-semibold hover:bg-gray-100">
+                    Change Currency (USD $)
+                </button>
+
+                <div class="bg-white p-5 rounded-xl shadow">
+
+                    <h2 class="font-bold text-lg mb-4">Order Summary</h2>
+
+                    <div class="flex justify-between text-sm mb-4">
+                        <p>Total Cost</p>
+                        <p id="totalCost" class="font-semibold text-blue-600">$12.50</p>
+                    </div>
+
+                    <button class="bg-blue-600 hover:bg-blue-700 w-full py-3 rounded-lg text-white font-semibold">
+                        Place Order
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
     </div>
 
-    <div>
-      <label class="text-sm font-medium">Link</label>
-      <input type="text" class="w-full border rounded-lg h-12 px-4" placeholder="Paste your post link here">
-    </div>
+    <!-- CURRENCY SCRIPT -->
+    <script>
+        let currencyIndex = 0;
+        const currencies = [
+            { label: "USD $", value: "$12.50" },
+            { label: "INR ₹", value: "₹1040" },
+            { label: "EUR €", value: "€11.30" }
+        ];
 
-    <div>
-      <label class="text-sm font-medium">Quantity</label>
-      <input type="number" class="w-full border rounded-lg h-12 px-4" placeholder="1000">
-    </div>
-
-    <button onclick="location.href='Orderspage.html'"
-      class="w-full bg-blue-600 text-white font-semibold rounded-lg h-12">
-      Place Order
-    </button>
-
-  </div>
-
-</div>
+        document.getElementById("currencyBtn").onclick = () => {
+            currencyIndex = (currencyIndex + 1) % currencies.length;
+            document.getElementById("currencyBtn").innerText = "Change Currency (" + currencies[currencyIndex].label + ")";
+            document.getElementById("totalCost").innerText = currencies[currencyIndex].value;
+        };
+    </script>
 
 </body>
 </html>
